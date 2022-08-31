@@ -1,18 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/JustinGrote/AzurePolicyDefinitionSchema#",
+  "$id": "https://raw.githubusercontent.com/JustinGrote/AzurePolicySchema/main/policyDefinition.schema.json",
   "title": "Azure Policy Definition",
   "description": "Azure Policy Definition: https://docs.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure",
   "type": "object",
   "properties": {
+    "name": {
+      "description": "The unique name of the policy definition. This is usually the same as what is after the / of the resource ID",
+      "type": "string"
+    },
     "properties": {
-      "$ref": "#/$defs/policyDefinitionProperties"
-    }
-  },
-  "$defs": {
-    "policyDefinitionProperties": {
-      "description": "Policy Definition Properties",
-      "$comment": "We use this to override the Azure Version because it doesn't validate policyRule",
       "type": "object",
       "properties": {
         "displayName": {
@@ -83,6 +80,53 @@
           "description": "The type of policy definition. Possible values are NotSpecified, BuiltIn, and Custom."
         }
       }
+    },
+    "id": {
+      "description": "The resource ID of the policy definition. This is only used when describing existing policies.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The Azure type of the definition file, e.g. Microsoft.Authorization/policyDefinitions",
+      "type": "string",
+      "enum": [
+        "Microsoft.Authorization/policyDefinitions"
+      ],
+      "default": "Microsoft.Authorization/policyDefinitions"
+    },
+    "systemData": {
+      "description": "The system metadata related to this resource.",
+      "type": "object",
+      "properties": {
+        "createdBy": {
+          "description": "The identity that created the resource.",
+          "type": "string"
+        },
+        "createdByType": {
+          "description": "The type of identity that created the resource: user, application, managedIdentity, key.",
+          "type": "string"
+        },
+        "createdAt": {
+          "description": "The timestamp of resource creation (UTC).",
+          "type": "string"
+        },
+        "lastModifiedBy": {
+          "description": "The identity that last modified the resource.",
+          "type": "string"
+        },
+        "lastModifiedByType": {
+          "description": "The type of identity that last modified the resource: user, application, managedIdentity, key.",
+          "type": "string"
+        },
+        "lastModifiedAt": {
+          "description": "The timestamp of resource last modification (UTC).",
+          "type": "string"
+        }
+      }
     }
-  }
+  },
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "properties"
+  ]
 }

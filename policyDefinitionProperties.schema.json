@@ -1,5 +1,0 @@
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/JustinGrote/AzurePolicyDefinition#",
-  "title": "Azure Policy Definition",
-  "description": "Azure Policy Definition: https://docs.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure",
-  "type": "object",
