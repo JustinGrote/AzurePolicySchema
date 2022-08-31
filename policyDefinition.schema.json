@@ -193,7 +193,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "name",
     "properties"
   ]
 }
