@@ -5,6 +5,9 @@
   "description": "Azure Policy Definition: https://docs.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure",
   "type": "object",
   "properties": {
+    "$schema": {
+      "type": "string"
+    },
     "name": {
       "description": "The unique name of the policy definition. This is usually the same as what is after the / of the resource ID",
       "type": "string"
@@ -15,6 +18,10 @@
         "displayName": {
           "type": "string",
           "description": "The display name of the policy definition."
+        },
+        "description": {
+          "type": "string",
+          "description": "The description of the policy definition."
         },
         "metadata": {
           "type": "object",
