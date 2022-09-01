@@ -3,7 +3,7 @@
   "displayName": "Azure Policy Intellisense",
   "description": "Enables intellisense via JSON schema for common Azure Policy formats and file types.",
   "publisher": "justin-grote",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -28,11 +28,23 @@
         "url": "./policyDefinition.schema.json"
       },
       {
+        "fileMatch": "**/*.{policy,azurepolicy}.json",
+        "url": "./policyDefinition.schema.json"
+      },
+      {
         "fileMatch": "**/{policy,azurepolicy}.parameters.json",
         "url": "./policyParameters.schema.json"
       },
       {
+        "fileMatch": "**/*.parameters.json",
+        "url": "./policyParameters.schema.json"
+      },
+      {
         "fileMatch": "**/{policy,azurepolicy}.rules.json",
+        "url": "./policyRule.schema.json"
+      },
+      {
+        "fileMatch": "**/*.rules.json",
         "url": "./policyRule.schema.json"
       }
     ]
