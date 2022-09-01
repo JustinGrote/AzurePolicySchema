@@ -1,0 +1,18 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/examples/policyDefinitionPortalExport.json",
+        "/examples/policyDefinitionProperties.json",
+        "/examples/policyDefinitionRule.json"
+      ],
+      "url": "./policyDefinition.schema.json"
+    },
+    {
+      "fileMatch": [
+        "/examples/policyParameters.json"
+      ],
+      "url": "./policyParameters.schema.json"
+    }
+  ]
+}

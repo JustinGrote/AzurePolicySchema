@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/JustinGrote/AzurePolicySchema/main/policyProperties.schema.json",
+  "title": "Azure Policy Properties",
+  "description": "Azure Policy Properties: https://docs.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure",
+  "type": "object",
+  "properties": {
+    "displayName": {
+      "type": "string",
+      "description": "The display name of the policy definition."
+    },
+    "description": {
+      "type": "string",
+      "description": "The description of the policy definition."
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "Tracks details about the version of the contents of a policy definition.",
+          "examples": [
+            "1.0.0"
+          ],
+          "maximum": 1024
+        },
+        "category": {
+          "type": "string",
+          "description": "Determines under which category in the Azure portal the policy definition is displayed.",
+          "maximum": 1024
+        },
+        "preview": {
+          "type": "boolean",
+          "description": "Determines under which category in the Azure portal the policy definition is displayed.",
+          "maximum": 1024
+        }
+      },
+      "additionalProperties": {
+        "maximum": 1024
+      },
+      "description": "The policy definition metadata."
+    },
+    "mode": {
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": [
+            "NotSpecified",
+            "Indexed",
+            "All"
+          ]
+        },
+        {
+          "$ref": "https://schema.management.azure.com/schemas/common/definitions.json#/definitions/expression"
+        }
+      ],
+      "description": "The policy definition mode. Possible values are NotSpecified, Indexed, and All."
+    },
+    "parameters": {
+      "description": "Required if a parameter is used in policy rule.",
+      "ref": "policyParameters.schema.json"
+    },
+    "policyRule": {
+      "description": "The policy rule.",
+      "$ref": "https://schema.management.azure.com/schemas/2020-10-01/policyDefinition.json"
+    },
+    "policyType": {
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": [
+            "NotSpecified",
+            "BuiltIn",
+            "Custom"
+          ]
+        },
+        {
+          "$ref": "https://schema.management.azure.com/schemas/common/definitions.json#/definitions/expression"
+        }
+      ],
+      "description": "The type of policy definition. Possible values are NotSpecified, BuiltIn, and Custom."
+    }
+  },
+  "additionalProperties": false
+}
