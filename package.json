@@ -3,11 +3,11 @@
   "displayName": "Azure Policy Intellisense",
   "description": "Enables intellisense via JSON schema for common Azure Policy formats and file types.",
   "publisher": "justin-grote",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.70.0"
   },
-  "icon": "logo.png",
+  "icon": "images/logo.png",
   "author": {
     "name": "Justin Grote",
     "url": "https://twitter.com/JustinWGrote"

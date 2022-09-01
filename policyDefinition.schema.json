@@ -7,10 +7,10 @@
   "type": "object",
   "oneOf": [
     {
-      "$ref": "./PolicyProperties.schema.json"
+      "$ref": "./policyProperties.schema.json"
     },
     {
-      "$ref": "./PolicyRule.schema.json"
+      "$ref": "./policyRule.schema.json"
     },
     {
       "type": "object",
