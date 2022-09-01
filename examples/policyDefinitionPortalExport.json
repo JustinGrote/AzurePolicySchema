@@ -2,7 +2,7 @@
   "properties": {
     "displayName": "Configure Azure Activity logs to stream to specified Log Analytics workspace",
     "policyType": "BuiltIn",
-    "mode": "All",
+    "mode": "all",
     "description": "Deploys the diagnostic settings for Azure Activity to stream subscriptions audit logs to a Log Analytics workspace to monitor subscription-level events",
     "metadata": {
       "version": "1.0.0",
