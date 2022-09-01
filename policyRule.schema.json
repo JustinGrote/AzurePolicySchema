@@ -40,7 +40,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/common/definitions.json#/definitions/expression"
+              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
             }
           ]
         },
@@ -169,7 +169,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/common/definitions.json#/definitions/expression"
+              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
             }
           ]
         },
@@ -196,7 +196,7 @@
               },
               "value": {},
               "condition": {
-                "$ref": "https://schema.management.azure.com/schemas/common/definitions.json#/definitions/expression"
+                "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
               }
             },
             "required": [
@@ -229,7 +229,7 @@
               ]
             },
             {
-              "$ref": "https://schema.management.azure.com/schemas/common/definitions.json#/definitions/expression"
+              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
             }
           ]
         }
@@ -550,7 +550,7 @@
                   "type": "array"
                 },
                 {
-                  "$ref": "https://schema.management.azure.com/schemas/common/definitions.json#/definitions/expression"
+                  "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
                 }
               ]
             },

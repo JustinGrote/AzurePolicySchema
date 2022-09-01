@@ -1,5 +1,5 @@
 {
-  "mode": "Indexed",
+  "mode": "indexed",
   "displayName": "Deploy Diagnostic Settings for Activity Log to Event Hub",
   "description": "Deploys the diagnostic settings for Activity Log to stream to a regional Event Hub when any Subscription which is missing this diagnostic settings is created or updated.",
   "parameters": {
@@ -46,9 +46,9 @@
       "effect": "[parameters('effect')]",
       "details": {
         "type": "Microsoft.Insights/diagnosticSettings",
-        "ExistenceScope": "Subscription",
-        "DeploymentScope": "Subscription",
-        "ExistenceCondition": {
+        "existenceScope": "subscription",
+        "deploymentScope": "subscription",
+        "existenceCondition": {
           "allOf": [
             {
               "field": "Microsoft.Insights/diagnosticSettings/eventHubAuthorizationRuleId",
@@ -66,7 +66,7 @@
         "deployment": {
           "location": "eastus",
           "properties": {
-            "mode": "incremental",
+            "mode": "Incremental",
             "template": {
               "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
               "contentVersion": "1.0.0.0",

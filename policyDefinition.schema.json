@@ -5,7 +5,7 @@
   "title": "Azure Policy Definition",
   "description": "Azure Policy Definition: https://docs.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure",
   "type": "object",
-  "oneOf": [
+  "anyOf": [
     {
       "$ref": "./policyProperties.schema.json"
     },
