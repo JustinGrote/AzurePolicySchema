@@ -55,7 +55,7 @@
           ]
         },
         {
-          "$ref": "./azureSchemas/commonDefinitions.json"
+          "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
         }
       ],
       "description": "The policy definition mode. Typical values are either indexed or all"
