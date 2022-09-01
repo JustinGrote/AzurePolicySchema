@@ -26,7 +26,7 @@
               "maxLength": 64
             },
             {
-              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
+              "$ref": "./commonDefinitions.json#/definitions/expression"
             }
           ],
           "description": "The name of the deployment."
@@ -37,7 +37,7 @@
               "$ref": "#/definitions/DeploymentProperties"
             },
             {
-              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
+              "$ref": "./commonDefinitions.json#/definitions/expression"
             }
           ],
           "description": "Deployment properties."
@@ -91,7 +91,7 @@
               "maxLength": 64
             },
             {
-              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
+              "$ref": "./commonDefinitions.json#/definitions/expression"
             }
           ],
           "description": "The name of the deployment."
@@ -102,7 +102,7 @@
               "$ref": "#/definitions/DeploymentProperties"
             },
             {
-              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
+              "$ref": "./commonDefinitions.json#/definitions/expression"
             }
           ],
           "description": "Deployment properties."
@@ -140,7 +140,7 @@
               "description": "the resource group name"
             },
             {
-              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
+              "$ref": "./commonDefinitions.json#/definitions/expression"
             }
           ]
         },
@@ -169,7 +169,7 @@
               }
             },
             {
-              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
+              "$ref": "./commonDefinitions.json#/definitions/expression"
             }
           ],
           "description": "The resource group tags."
@@ -203,7 +203,7 @@
               "$ref": "#/definitions/DebugSetting"
             },
             {
-              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
+              "$ref": "./commonDefinitions.json#/definitions/expression"
             }
           ]
         },
@@ -217,7 +217,7 @@
               ]
             },
             {
-              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
+              "$ref": "./commonDefinitions.json#/definitions/expression"
             }
           ],
           "description": "The mode that is used to deploy resources. This value can be either Incremental or Complete. In Incremental mode, resources are deployed without deleting existing resources that are not included in the template. In Complete mode, resources are deployed and existing resources in the resource group that are not included in the template are deleted. Be careful when using Complete mode as you may unintentionally delete resources."
@@ -228,7 +228,7 @@
               "$ref": "#/definitions/OnErrorDeployment"
             },
             {
-              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
+              "$ref": "./commonDefinitions.json#/definitions/expression"
             }
           ],
           "description": "Deployment on error behavior."
@@ -244,7 +244,7 @@
               "$ref": "#/definitions/ParametersLink"
             },
             {
-              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
+              "$ref": "./commonDefinitions.json#/definitions/expression"
             }
           ],
           "description": "Entity representing the reference to the deployment parameters."
@@ -260,7 +260,7 @@
               "$ref": "#/definitions/TemplateLink"
             },
             {
-              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
+              "$ref": "./commonDefinitions.json#/definitions/expression"
             }
           ],
           "description": "Entity representing the reference to the template."
@@ -288,7 +288,7 @@
               ]
             },
             {
-              "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
+              "$ref": "./commonDefinitions.json#/definitions/expression"
             }
           ],
           "description": "The deployment on error behavior type. Possible values are LastSuccessful and SpecificDeployment."

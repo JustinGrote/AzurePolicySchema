@@ -79,7 +79,7 @@
           ]
         },
         {
-          "$ref": "https://schema.management.azure.com/schemas/common/definitions.json#/definitions/expression"
+          "$ref": "./azureSchemas/commonDefinitions.json#/definitions/expression"
         }
       ],
       "description": "The type of policy definition. Possible values are NotSpecified, BuiltIn, and Custom."
