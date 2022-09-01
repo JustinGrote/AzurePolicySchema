@@ -7,11 +7,13 @@
   "properties": {
     "displayName": {
       "type": "string",
-      "description": "The display name of the policy definition."
+      "description": "The display name of the policy definition.",
+      "maxLength": 128
     },
     "description": {
       "type": "string",
-      "description": "The description of the policy definition."
+      "description": "A more detailed description of the policy definition.",
+      "maxLength": 512
     },
     "metadata": {
       "type": "object",
@@ -22,21 +24,21 @@
           "examples": [
             "1.0.0"
           ],
-          "maximum": 1024
+          "maxLength": 1024
         },
         "category": {
           "type": "string",
           "description": "Determines under which category in the Azure portal the policy definition is displayed.",
-          "maximum": 1024
+          "maxLength": 1024
         },
         "preview": {
           "type": "boolean",
           "description": "Determines under which category in the Azure portal the policy definition is displayed.",
-          "maximum": 1024
+          "maxLength": 1024
         }
       },
       "additionalProperties": {
-        "maximum": 1024
+        "maxLength": 1024
       },
       "description": "The policy definition metadata."
     },
@@ -44,17 +46,19 @@
       "oneOf": [
         {
           "type": "string",
-          "enum": [
-            "NotSpecified",
-            "Indexed",
-            "All"
+          "examples": [
+            "indexed",
+            "all",
+            "Microsoft.Kubernetes.Data",
+            "Microsoft.KeyVault.Data",
+            "Microsoft.Network.Data"
           ]
         },
         {
           "$ref": "https://schema.management.azure.com/schemas/common/definitions.json#/definitions/expression"
         }
       ],
-      "description": "The policy definition mode. Possible values are NotSpecified, Indexed, and All."
+      "description": "The policy definition mode. Typical values are either indexed or all"
     },
     "parameters": {
       "description": "Required if a parameter is used in policy rule.",

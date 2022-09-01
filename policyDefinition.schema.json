@@ -7,10 +7,10 @@
   "type": "object",
   "oneOf": [
     {
-      "$ref": "PolicyProperties.schema.json"
+      "$ref": "./PolicyProperties.schema.json"
     },
     {
-      "$ref": "https://schema.management.azure.com/schemas/2020-10-01/policyDefinition.json"
+      "$ref": "./PolicyRule.schema.json"
     },
     {
       "type": "object",
@@ -30,7 +30,7 @@
           "type": "string"
         },
         "type": {
-          "description": "The Azure type of the definition file, e.g. Microsoft.Authorization/policyDefinitions",
+          "description": "The Azure type of the definition file, e.g. Builtin/Custom/Static. This is a Read-Only property.",
           "type": "string",
           "enum": [
             "Microsoft.Authorization/policyDefinitions"

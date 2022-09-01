@@ -24,7 +24,8 @@
     "type": "string",
     "metadata": {
       "displayName": "Profile name",
-      "description": "The diagnostic settings profile name"
+      "description": "The diagnostic settings profile name",
+      "strongType": "Microsoft.Network/virtualNetworks/subnets"
     },
     "defaultValue": "setbypolicy_logAnalytics"
   }
