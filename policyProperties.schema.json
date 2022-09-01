@@ -62,7 +62,7 @@
     },
     "parameters": {
       "description": "Required if a parameter is used in policy rule.",
-      "ref": "policyParameters.schema.json"
+      "ref": "./policyParameters.schema.json"
     },
     "policyRule": {
       "description": "The policy rule.",
