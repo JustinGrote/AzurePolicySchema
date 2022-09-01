@@ -2,10 +2,21 @@
   "name": "azure-policy-intellisense",
   "displayName": "Azure Policy Intellisense",
   "description": "Enables intellisense via JSON schema for common Azure Policy formats and file types.",
+  "publisher": "justin-grote",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.70.0"
   },
+  "icon": "logo.png",
+  "author": {
+    "name": "Justin Grote",
+    "url": "https://twitter.com/JustinWGrote"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JustinGrote/AzurePolicySchema"
+  },
+  "license": "MIT",
   "categories": [
     "Azure",
     "Linters"
@@ -13,16 +24,16 @@
   "contributes": {
     "jsonValidation": [
       {
-        "fileMatch": "**/policy.json",
-        "url": "https://raw.githubusercontent.com/JustinGrote/AzurePolicySchema/main/policyDefinition.schema.json"
+        "fileMatch": "**/{policy,azurepolicy}.json",
+        "url": "policyDefinition.schema.json"
       },
       {
-        "fileMatch": "**/policy.parameters.json",
-        "url": "https://raw.githubusercontent.com/JustinGrote/AzurePolicySchema/main/policyParameters.schema.json"
+        "fileMatch": "**/{policy,azurepolicy}.parameters.json",
+        "url": "policyParameters.schema.json"
       },
       {
-        "fileMatch": "**/policy.rules.json",
-        "url": "https://raw.githubusercontent.com/JustinGrote/AzurePolicySchema/main/policyParameters.schema.json"
+        "fileMatch": "**/{policy,azurepolicy}.rules.json",
+        "url": "policyRule.schema.json"
       }
     ]
   }
