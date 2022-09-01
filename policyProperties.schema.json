@@ -65,8 +65,8 @@
       "ref": "./policyParameters.schema.json"
     },
     "policyRule": {
-      "description": "The policy rule.",
-      "$ref": "https://schema.management.azure.com/schemas/2020-10-01/policyDefinition.json"
+      "description": "The policy rules that define this policy",
+      "$ref": "./policyRule.schema.json"
     },
     "policyType": {
       "oneOf": [
